@@ -1,0 +1,28 @@
+{
+  "name": "vite2-vue3-tailwind2-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --open",
+    "build": "cross-env NODE_ENV=production vite build",
+    "serve": "ws --directory dist --spa index.html --open"
+  },
+  "dependencies": {
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
+    "tailwindcss": "^2.0.2",
+    "@vitejs/plugin-vue": "^1.1.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.3",
+    "cross-env": "^7.0.3",
+    "local-web-server": "^4.2.1",
+    "postcss": "^8.2.4",
+    "vite": "^2.0.0-beta.56"
+  }
+}
