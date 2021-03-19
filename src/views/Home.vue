@@ -1,31 +1,49 @@
 <template>
   <main class="w-full bg-gray-900">
+    <navbar />
     <div class="w-full flex justify-between">
-      <div class="flex w-2/6 h-screen">
+      <!-- <div class="flex w-2/6 h-screen">
         <div class="flex flex-col">
-          <button class="bg-white border p-3" @click="addRect()">add rect</button>
-        <input type="text" v-model="newObject.fill" class="w-full bg-white p-3 border">
+          <button
+            class="bg-white border p-3"
+            @click="addRect()"
+          >add rect</button>
+          <input
+            type="text"
+            v-model="newObject.fill"
+            class="w-full bg-white p-3 border"
+          >
         </div>
-      </div>
+      </div> -->
       <div class="flex w-4/6 h-screen p-12 bg-gray-300 items-center justify-center">
-        <canvas ref="canvas" class="bg-white w-full h-full" width="600" height="400"></canvas>
+        <canvas
+          ref="canvas"
+          class="bg-white w-full h-full"
+          width="600"
+          height="400"
+        ></canvas>
       </div>
     </div>
   </main>
 </template>
 
 <script>
+import Navbar from "@/components/layout/Navbar.vue";
+
 export default {
+  components: {
+    Navbar,
+  },
   data() {
     return {
       canvas: null,
       newObject: {
-        width : 60,
-        height : 70,
-        fill : 'red',
-        border: 'green'
-      }
-    }
+        width: 60,
+        height: 70,
+        fill: "red",
+        border: "green",
+      },
+    };
   },
   methods: {
     addRect() {
@@ -34,10 +52,10 @@ export default {
     },
     initCanvas() {
       this.canvas = new fabric.Canvas(this.$refs.canvas);
-    }
+    },
   },
   mounted() {
-    this.initCanvas()
-  }
-}
+    this.initCanvas();
+  },
+};
 </script>
