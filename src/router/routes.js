@@ -1,7 +1,7 @@
 export let routes = [
   {
     path: '/',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/Index.vue'),
   },
   { 
     path: '/:path(.*)',

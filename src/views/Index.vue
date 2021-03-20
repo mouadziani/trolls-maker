@@ -15,7 +15,7 @@
 
 <script>
 import Navbar from "@/components/layout/Navbar.vue";
-import Sidebar from "@/components/layout/Sidebar.vue";
+import Sidebar from "@/components/layout/sidebar/Sidebar.vue";
 
 export default {
   components: {
