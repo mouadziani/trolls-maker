@@ -1,5 +1,5 @@
 {
-  "name": "vite2-vue3-tailwind2-starter",
+  "name": "trolls-maker",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
   "dependencies": {
     "fabric": "^4.3.1",
     "vue": "^3.0.5",
-    "vue-fabric": "^0.1.41",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
   },
